@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- second font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <!-- CSS linked -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-center">
+    <main>
+        <h1 class="banner">Weather Forecast</h1>
+        <div class="form-group">
+            <input type="text" id="city-input" placeholder="Enter your city name">
+            <button type="button" onclick="searchCity()" class="btn">Search</button>
+        </div>
+
+        <div id="weather-output">
+            <div class="card">
+                <div class="card-header">
+                    <h4 id="city-name">your city here</h4>
+                </div>
+                <div class="card-body">
+                    <h1 id="weather-type">how's weather</h1>
+                    <ul class="list">
+                        <li>Temp: <span id="temp">---</span></li>
+                        <li>Min Temp: <span id="min-temp">---</span></li>
+                        <li>Max Temp: <span id="max-temp">---</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
