@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Candle</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background: #217c3c;
+        }
+        .candle{
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            margin-left: 100px;
+            margin-top: 100px;
+            background: #d5e4d8;
+            border-radius: 4px 4px 4px 4px ;
+            background: linear-gradient(to bottom, #c9e64c 0%, #c495ca 100%);
+        }
+        
+        .thread{
+            position:absolute;
+            top: -15px;
+            left: 23px;
+            width: 4px;
+            height: 15px;
+            background: #3a3838;
+            
+        }
+        
+        .flame{
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background: #cbda05;
+            top: -48px;
+            left: 15px;
+            border-radius: 10px 10px 8px / 30px 30px 12px 12px;
+            animation: direction 10s linear infinite;
+            box-shadow: 0px 0px 30px 6px rgba(241, 239, 80, 0.99);
+        }
+        .flame-inside{
+          position: absolute;
+          width: 13px;
+          height: 20px;
+          background: orange;
+          top: -30px;
+          left: 18px;
+          border-radius:100px 100px 100px ;
+        }
+        
+        @keyframes direction{
+            0%,30%,40%,80%,90%{
+                border-radius: 3px 12px 10px 10px / 20px 20px;
+            }
+            10%,35%,45%,67%,90%{
+                border-radius: 12px 3px 10px 10px / 20px 20px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="candle">
+      <div class="thread"></div>
+      <div class="flame"></div>
+      <div class="flame-inside"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding: 0;
+    background: #217c3c;
+}
+.candle{
+    position: absolute;
+    width: 39px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background: #fbfffc;
+    box-shadow: inset 10px 0 0 0 #dde0de;
+    border-radius: 4px 4px 4px 4px ;
+    
+}
+
+.thread{
+    position:absolute;
+    top: -15px;
+    left: 18px;
+    width: 4px;
+    height: 15px;
+    background: #3a3838;
+    
+}
+
+.flame{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #cbda05;
+    top: -48px;
+    left: 10px;
+    border-radius: 10px 10px 8px / 30px 30px 12px 12px;
+    animation: direction 10s ease-in-out infinite;
+    box-shadow: 0px 0px 30px 6px rgba(241, 239, 80, 0.99);
+}
+
+@keyframes direction{
+    0%,30%,40%,80%,90%{
+        border-radius: 3px 12px 10px 10px / 20px 20px;
+    }
+    10%,35%,45%,67%,90%{
+        border-radius: 12px 3px 10px 10px / 20px 20px;
+    }
+}
